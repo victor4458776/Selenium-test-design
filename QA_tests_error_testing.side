@@ -1,0 +1,61 @@
+1. QA tests error tracking-jira:
+
+Command open /
+Command click
+Target  id=confirm
+
+Command         | Target       |  Value
+
+open            /
+
+click           id=confirm
+
+webdriver
+choose ok
+on visible
+confirmation
+
+assert 
+confirmation   Press OK to confirm
+
+webdriver answer
+visible prompt
+
+webdriver choose cancel
+on visible confirmation
+
+Command          | Target       |  Value
+
+open              /
+
+set window size   1365x611
+
+click             name=q
+
+debugger
+
+type              name=q
+
+click             css=gsc-search-butt
+                  on:nth-child(1)
+						
+debugger 
+
+http://
+Command            | Target       |  Value
+open                /
+//
+click               xpath=//a[text()='Hotels'
+
+select frame        index=0
+
+
+
+Command                 | Target                          |  Value
+
+open                      https://jqueryui.com/droppable
+
+select frame              index=0
+
+drag and drop to object   id=draggable                     id=droppable
+
