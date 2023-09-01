@@ -1,0 +1,34 @@
+Command          | Target       |  Value
+open
+execute script    alert("hi")
+
+Command          | Target       |  Value
+open              http://
+submit            css=form[action $='login']
+
+Command          | Target       |  Value             http://
+open              http://
+ 
+store             .com
+
+echo              ${x}
+
+
+Note: I have given the XPath locating strategy for locating the all the hyperlinks on the page using xpath=//a XPath locating strategy.
+
+Command	Target	Value
+open	http://omayo.blogspot.com/	
+store xpath count	xpath=//a	x
+echo	${x}
+
+#log
+#echo{76}
+
+
+Command	         Target	                   Value
+open	            http://omayo.blogspot.com/	
+store attribute   id=but2@type	             x
+echo	            ${x}
+
+#id selector
+#echo button
