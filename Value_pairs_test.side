@@ -1,0 +1,30 @@
+#id selector
+#echo button
+
+Command	    Target	                Value
+open	       http://omayo.blogspot.com/	
+store value	 id=rotb	             x
+echo	       ${x}
+
+
+
+Command	  Target	                    Value
+open	     http://omayo.blogspot.com/	
+store title		                       x
+assert	x	                          omayo (QAFox.com)
+
+
+Command	Target	                   Value
+open	    http://omayo.blogspot.com/	
+store title		                      x
+assert	 x	              omayo (QAFox.com)
+
+
+
+Command	          Target	                           Value
+open	             http://omayo.blogspot.com/	
+click	             xpath=//button[text()=’Check this’]	
+
+wait for element 
+editable	id=dte	                                    30000
+verify editable	id=dte
